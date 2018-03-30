@@ -62,7 +62,7 @@ At the time of writing following API endpoints have been implemented
 
 ### POST file/comment
 ```javascript
-    hello('figma').api('file/comment', { key: 'FILE_KEY' }, {
+    hello('figma').api('file/comment', 'post', { key: 'FILE_KEY',
         message: 'Some comment',
         client_meta: {x:0, y:0}
     });
