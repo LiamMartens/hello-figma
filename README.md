@@ -61,6 +61,7 @@ At the time of writing following API endpoints have been implemented
 ```
 
 ### POST file/comment
+! At the time of writing this does not work because the Web API CORS blocks the `Content-Type` header !
 ```javascript
     hello('figma').api('file/comment', 'post', { key: 'FILE_KEY',
         message: 'Some comment',
