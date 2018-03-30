@@ -40,7 +40,6 @@ export default hello => {
                 }
 
                 if(p.method !== 'get' && p.data) {
-                    p.headers['Content-Type'] = 'application/json';
                     if(typeof(p.data) === 'object') {
                         p.data = JSON.stringify(p.data);
                     }
