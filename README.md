@@ -47,7 +47,7 @@ At the time of writing following API endpoints have been implemented
 
 ### GET file/images
 ```javascript
-    hello('figma').api('file/images', { key: 'FILE_KEY' });
+    hello('figma').api('file/images', { key: 'FILE_KEY', ids: '..', ...otherQueryParams });
 ```
 
 ### GET team/projects
