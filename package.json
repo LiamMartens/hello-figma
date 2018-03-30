@@ -1,0 +1,32 @@
+{
+  "name": "hello-figma",
+  "version": "0.0.1",
+  "description": "Figma OAuth2 integration for hello.js",
+  "main": "lib/hello.figma.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --out-dir lib src"
+  },
+  "keywords": [
+    "figma",
+    "hellojs",
+    "authentication",
+    "oauth2",
+    "oauth"
+  ],
+  "author": "Liam Martens <liam@freighter.studio>",
+  "homepage": "https://github.com/LiamMartens/hello-figma",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiamMartens/hello-figma.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "peerDependencies": {
+    "hellojs": "^1.16.1"
+  }
+}
