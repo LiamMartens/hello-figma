@@ -31,12 +31,19 @@ export default hello => {
             },
 
             xhr: p => {
+                p.headers = p.headers || {};
                 const token = p.query.access_token;
                 delete p.query.access_token;
 
                 if(token) {
-                    p.headers = p.headers || {};
                     p.headers.Authorization = `Bearer ${token}`;
+                }
+
+                if(p.method !== 'get' && p.data) {
+                    p.headers['Content-Type'] = 'application/json';
+                    if(typeof(p.data) === 'object') {
+                        p.data = JSON.stringify(p.data);
+                    }
                 }
 
                 return true;
