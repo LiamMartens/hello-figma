@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "description": "Figma OAuth2 integration for hello.js",
   "main": "lib/hello.figma.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel --out-dir lib src"
+    "build": "babel --out-dir lib src",
+    "prepublish": "npm run build"
   },
   "keywords": [
     "figma",
