@@ -61,7 +61,7 @@ At the time of writing following API endpoints have been implemented
 ### GET file/versions
 ```javascript
     hello('figma').api('file/versions', {
-        key: 'FILE_KEY
+        key: 'FILE_KEY'
     });
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "hello-figma",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Figma OAuth2 integration for hello.js",
   "main": "lib/hello.figma.js",
   "files": [

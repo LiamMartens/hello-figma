@@ -21,8 +21,8 @@ export default hello => {
             get: {
                 'file': 'files/@{key}',
                 'file/comments': 'files/@{key}/comments',
-                'file/images': 'images/@{key}',
                 'file/versions': 'files/@{key}/versions',
+                'file/images': 'images/@{key}',
                 'team/projects': 'teams/@{team}/projects',
                 'team/files': 'projects/@{project}/files'
             },
