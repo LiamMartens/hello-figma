@@ -22,6 +22,7 @@ export default hello => {
                 'file': 'files/@{key}',
                 'file/comments': 'files/@{key}/comments',
                 'file/images': 'images/@{key}',
+                'file/versions': 'files/@{key}/versions',
                 'team/projects': 'teams/@{team}/projects',
                 'team/files': 'projects/@{project}/files'
             },

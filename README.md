@@ -37,33 +37,52 @@ At the time of writing following API endpoints have been implemented
 
 ### GET file
 ```javascript
-    hello('figma').api('file', { key: 'FILE_KEY' });
+    hello('figma').api('file', {
+        key: 'FILE_KEY'
+    });
 ```
 
 ### GET file/comments
 ```javascript
-    hello('figma').api('file/comments', { key: 'FILE_KEY' });
+    hello('figma').api('file/comments', {
+        key: 'FILE_KEY'
+    });
 ```
 
 ### GET file/images
 ```javascript
-    hello('figma').api('file/images', { key: 'FILE_KEY', ids: '..', ...otherQueryParams });
+    hello('figma').api('file/images', {
+        key: 'FILE_KEY',
+        ids: '..',
+        ...otherQueryParams
+    });
+```
+
+### GET file/versions
+```javascript
+    hello('figma').api('file/versions', {
+        key: 'FILE_KEY
+    });
 ```
 
 ### GET team/projects
 ```javascript
-    hello('figma').api('team/projects', { team: 'TEAM_ID' });
+    hello('figma').api('team/projects', {
+        team: 'TEAM_ID'
+    });
 ```
 
 ### GET team/files
 ```javascript
-    hello('figma').api('team/files', { project: 'TEAM_PROJECT_ID' });
+    hello('figma').api('team/files', {
+        project: 'TEAM_PROJECT_ID'
+    });
 ```
 
 ### POST file/comment
-! At the time of writing this does not work because the Web API CORS blocks the `Content-Type` header !
 ```javascript
-    hello('figma').api('file/comment', 'post', { key: 'FILE_KEY',
+    hello('figma').api('file/comment', 'post', {
+        key: 'FILE_KEY',
         message: 'Some comment',
         client_meta: {x:0, y:0}
     });
